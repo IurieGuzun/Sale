@@ -22,13 +22,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onAddTapped() {
-//        AlertService.addProductAlert(in: self) { (product) in
+        AlertService.addProductAlert(in: self) { (product) in
+            print("product = ",product)
+            self.products.append(product)
+            self.collectionView.reloadData()
 //            ProductsService.shared.post(product: product)
-//        }
+        }
 }
     
     @IBAction func onSubscribeTapped() {
-//        AlertService.subscribeAlert(in: self)
+        AlertService.subscribeAlert(in: self)
     }
 
 }
