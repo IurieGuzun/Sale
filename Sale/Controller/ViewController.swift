@@ -9,12 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var products = [Product]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        ProductsService.shared.delegate = self
+//        ProductsService.shared.observeProducts()
     }
-
+    
+    @IBAction func onAddTapped() {
+//        AlertService.addProductAlert(in: self) { (product) in
+//            ProductsService.shared.post(product: product)
+//        }
+}
+    
+    @IBAction func onSubscribeTapped() {
+//        AlertService.subscribeAlert(in: self)
+    }
 
 }
 

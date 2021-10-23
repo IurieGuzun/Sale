@@ -27,6 +27,10 @@
                                         <string key="title" base64-UTF8="YES">
 UHJvZHVjdHMIA
 </string>
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="Item" image="plus" catalog="system" id="oGR-WM-cur"/>
+                                            <barButtonItem systemItem="bookmarks" id="0sR-dT-MFa"/>
+                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -40,7 +44,7 @@ UHJvZHVjdHMIA
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sSt-s8-Hln">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="sSt-s8-Hln" customClass="ProductCell" customModule="Sale" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BG6-jS-e92">
@@ -92,6 +96,10 @@ CCQyNS4wMA
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="180" height="190"/>
+                                        <connections>
+                                            <outlet property="priceLabel" destination="RiO-eQ-f40" id="MRo-xz-m4h"/>
+                                            <outlet property="titleLabel" destination="wqK-fN-wTO" id="sTJ-q7-21V"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -115,6 +123,7 @@ CCQyNS4wMA
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="sale-3" width="384" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A08036D2724661300DD04BA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A08036C2724661300DD04BA /* Product.swift */; };
+		8A08036F2724691C00DD04BA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A08036E2724691C00DD04BA /* ProductCell.swift */; };
 		8AA401FD27245983009BD603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA401FC27245983009BD603 /* AppDelegate.swift */; };
 		8AA401FF27245983009BD603 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA401FE27245983009BD603 /* SceneDelegate.swift */; };
 		8AA4020127245983009BD603 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4020027245983009BD603 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		8A08036C2724661300DD04BA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8A08036E2724691C00DD04BA /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		8AA401F927245983009BD603 /* Sale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA401FC27245983009BD603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AA401FE27245983009BD603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 				8AA4020227245983009BD603 /* Main.storyboard */,
 				8AA4020727245985009BD603 /* LaunchScreen.storyboard */,
 				8AA4020527245985009BD603 /* Assets.xcassets */,
+				8A08036E2724691C00DD04BA /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				8AA4020127245983009BD603 /* ViewController.swift in Sources */,
 				8A08036D2724661300DD04BA /* Product.swift in Sources */,
+				8A08036F2724691C00DD04BA /* ProductCell.swift in Sources */,
 				8AA401FD27245983009BD603 /* AppDelegate.swift in Sources */,
 				8AA401FF27245983009BD603 /* SceneDelegate.swift in Sources */,
 			);
