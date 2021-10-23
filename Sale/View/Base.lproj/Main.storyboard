@@ -28,8 +28,16 @@
 UHJvZHVjdHMIA
 </string>
                                         <rightBarButtonItems>
-                                            <barButtonItem title="Item" image="plus" catalog="system" id="oGR-WM-cur"/>
-                                            <barButtonItem systemItem="bookmarks" id="0sR-dT-MFa"/>
+                                            <barButtonItem title="Item" image="plus" catalog="system" id="oGR-WM-cur">
+                                                <connections>
+                                                    <action selector="onAddTapped" destination="BYZ-38-t0r" id="gmm-ra-yvj"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem systemItem="bookmarks" id="0sR-dT-MFa">
+                                                <connections>
+                                                    <action selector="onSubscribeTapped" destination="BYZ-38-t0r" id="4Da-aK-3vy"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
@@ -102,6 +110,9 @@ CCQyNS4wMA
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="87N-YK-tVv"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -116,6 +127,9 @@ CCQyNS4wMA
                             <constraint firstItem="dGq-ID-zof" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="e4c-VL-r4t"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="dGq-ID-zof" id="0kN-Vi-Vh3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

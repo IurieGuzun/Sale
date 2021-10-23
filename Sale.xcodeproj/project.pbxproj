@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A08036D2724661300DD04BA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A08036C2724661300DD04BA /* Product.swift */; };
 		8A08036F2724691C00DD04BA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A08036E2724691C00DD04BA /* ProductCell.swift */; };
+		8A08037127246EC300DD04BA /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A08037027246EC300DD04BA /* AlertService.swift */; };
 		8AA401FD27245983009BD603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA401FC27245983009BD603 /* AppDelegate.swift */; };
 		8AA401FF27245983009BD603 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA401FE27245983009BD603 /* SceneDelegate.swift */; };
 		8AA4020127245983009BD603 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4020027245983009BD603 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		8A08036C2724661300DD04BA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		8A08036E2724691C00DD04BA /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		8A08037027246EC300DD04BA /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		8AA401F927245983009BD603 /* Sale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA401FC27245983009BD603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AA401FE27245983009BD603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		8A08036927245AEF00DD04BA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				8A08037027246EC300DD04BA /* AlertService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				8A08036D2724661300DD04BA /* Product.swift in Sources */,
 				8A08036F2724691C00DD04BA /* ProductCell.swift in Sources */,
 				8AA401FD27245983009BD603 /* AppDelegate.swift in Sources */,
+				8A08037127246EC300DD04BA /* AlertService.swift in Sources */,
 				8AA401FF27245983009BD603 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
