@@ -17,6 +17,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+// Write to the Database
+//        FIRDatabaseService.shared.post(parameters: ["title": "Another cool shirt", "cost": "29.00"], to: .products)
+        
+        FIRDatabaseService.shared.observe(.products) { (snapshot) in
+            print(snapshot.value)
+        }
+        
+        
 //        ProductsService.shared.delegate = self
 //        ProductsService.shared.observeProducts()
     }
