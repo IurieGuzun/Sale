@@ -3,14 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171A6D913BDC9B5B1C5957BE /* Pods_Sale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAD8C4D438D6285B5D12D8F /* Pods_Sale.framework */; };
 		8A08036D2724661300DD04BA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A08036C2724661300DD04BA /* Product.swift */; };
 		8A08036F2724691C00DD04BA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A08036E2724691C00DD04BA /* ProductCell.swift */; };
 		8A08037127246EC300DD04BA /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A08037027246EC300DD04BA /* AlertService.swift */; };
 		8A2D38DB27248A6A00E6EA76 /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2D38DA27248A6A00E6EA76 /* UNService.swift */; };
+		8A87850B2726F2C4006B344C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A87850A2726F2C4006B344C /* GoogleService-Info.plist */; };
+		8A87850D2726FB98006B344C /* FireDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87850C2726FB98006B344C /* FireDatabaseService.swift */; };
 		8AA401FD27245983009BD603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA401FC27245983009BD603 /* AppDelegate.swift */; };
 		8AA401FF27245983009BD603 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA401FE27245983009BD603 /* SceneDelegate.swift */; };
 		8AA4020127245983009BD603 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4020027245983009BD603 /* ViewController.swift */; };
@@ -20,10 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EAD8C4D438D6285B5D12D8F /* Pods_Sale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0F6D4E8FC6FDB271D47BB8 /* Pods-Sale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sale.release.xcconfig"; path = "Target Support Files/Pods-Sale/Pods-Sale.release.xcconfig"; sourceTree = "<group>"; };
 		8A08036C2724661300DD04BA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		8A08036E2724691C00DD04BA /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		8A08037027246EC300DD04BA /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		8A2D38DA27248A6A00E6EA76 /* UNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNService.swift; sourceTree = "<group>"; };
+		8A2D38DC2724904500E6EA76 /* Sale.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sale.entitlements; sourceTree = "<group>"; };
+		8A87850A2726F2C4006B344C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A87850C2726FB98006B344C /* FireDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDatabaseService.swift; sourceTree = "<group>"; };
 		8AA401F927245983009BD603 /* Sale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA401FC27245983009BD603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AA401FE27245983009BD603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +40,7 @@
 		8AA4020527245985009BD603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AA4020827245985009BD603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AA4020A27245985009BD603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EA3E920AA0C7426381B7C9 /* Pods-Sale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sale.debug.xcconfig"; path = "Target Support Files/Pods-Sale/Pods-Sale.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +48,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171A6D913BDC9B5B1C5957BE /* Pods_Sale.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB8A1CE8299B871798E1E3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5EA3E920AA0C7426381B7C9 /* Pods-Sale.debug.xcconfig */,
+				5C0F6D4E8FC6FDB271D47BB8 /* Pods-Sale.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8A08036727245A9A00DD04BA /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +90,7 @@
 			children = (
 				8A08037027246EC300DD04BA /* AlertService.swift */,
 				8A2D38DA27248A6A00E6EA76 /* UNService.swift */,
+				8A87850C2726FB98006B344C /* FireDatabaseService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -88,6 +108,8 @@
 			children = (
 				8AA401FB27245983009BD603 /* Sale */,
 				8AA401FA27245983009BD603 /* Products */,
+				1AB8A1CE8299B871798E1E3C /* Pods */,
+				D639A7727A5E36FE0D1C371B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,13 +124,23 @@
 		8AA401FB27245983009BD603 /* Sale */ = {
 			isa = PBXGroup;
 			children = (
+				8A2D38DC2724904500E6EA76 /* Sale.entitlements */,
 				8AA4020A27245985009BD603 /* Info.plist */,
+				8A87850A2726F2C4006B344C /* GoogleService-Info.plist */,
 				8A08036B27245B2F00DD04BA /* Model */,
 				8A08036927245AEF00DD04BA /* Service */,
 				8A08036827245AB200DD04BA /* Controller */,
 				8A08036727245A9A00DD04BA /* View */,
 			);
 			path = Sale;
+			sourceTree = "<group>";
+		};
+		D639A7727A5E36FE0D1C371B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EAD8C4D438D6285B5D12D8F /* Pods_Sale.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AA4020D27245985009BD603 /* Build configuration list for PBXNativeTarget "Sale" */;
 			buildPhases = (
+				FDF240A61BB3721C5253E348 /* [CP] Check Pods Manifest.lock */,
 				8AA401F527245983009BD603 /* Sources */,
 				8AA401F627245983009BD603 /* Frameworks */,
 				8AA401F727245983009BD603 /* Resources */,
+				58F0DB24A731C9F51875AC3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AA4020927245985009BD603 /* LaunchScreen.storyboard in Resources */,
+				8A87850B2726F2C4006B344C /* GoogleService-Info.plist in Resources */,
 				8AA4020627245985009BD603 /* Assets.xcassets in Resources */,
 				8AA4020427245983009BD603 /* Main.storyboard in Resources */,
 			);
@@ -177,11 +212,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58F0DB24A731C9F51875AC3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sale/Pods-Sale-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sale/Pods-Sale-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sale/Pods-Sale-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDF240A61BB3721C5253E348 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sale-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8AA401F527245983009BD603 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A87850D2726FB98006B344C /* FireDatabaseService.swift in Sources */,
 				8AA4020127245983009BD603 /* ViewController.swift in Sources */,
 				8A08036D2724661300DD04BA /* Product.swift in Sources */,
 				8A08036F2724691C00DD04BA /* ProductCell.swift in Sources */,
@@ -330,8 +408,10 @@
 		};
 		8AA4020E27245985009BD603 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5EA3E920AA0C7426381B7C9 /* Pods-Sale.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sale/Sale.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JKMGXM83KA;
 				INFOPLIST_FILE = Sale/Info.plist;
@@ -349,8 +429,10 @@
 		};
 		8AA4020F27245985009BD603 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0F6D4E8FC6FDB271D47BB8 /* Pods-Sale.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sale/Sale.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JKMGXM83KA;
 				INFOPLIST_FILE = Sale/Info.plist;
