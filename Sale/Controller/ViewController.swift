@@ -67,3 +67,9 @@ extension ViewController: UICollectionViewDataSource {
     }
     
 }
+extension ViewController: ProductsServiceDelegate {
+    func didChange(products: [Product]) {
+        self.products = products
+        collectionView.reloadData()
+    }
+}
