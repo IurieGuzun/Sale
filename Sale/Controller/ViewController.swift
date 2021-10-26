@@ -20,12 +20,16 @@ class ViewController: UIViewController {
         
 // Write to the Database
 //        FIRDatabaseService.shared.post(parameters: ["title": "Another cool shirt", "cost": "29.00"], to: .products)
+
+// Read from Database
+//        FIRDatabaseService.shared.observe(.products) { (snapshot) in
+//            print(snapshot.value)
+//        }
         
         FIRDatabaseService.shared.observe(.products) { (snapshot) in
-            print(snapshot.value)
+            guard let productSnapshot = ProductsSnapshot(snapshot: snapshot) else {return}
+            print(productSnapshot)
         }
-        
-        
 //        ProductsService.shared.delegate = self
 //        ProductsService.shared.observeProducts()
     }
