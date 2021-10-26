@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Messages
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         print("did register for notifications")
+        print(" Messaging.messaging().fcmToken = ",Messaging.messaging().fcmToken)
 //        print(deviceToken.reduce(""){$0 + String(format: "%02X", $1)})
     }
     // MARK: UISceneSession Lifecycle

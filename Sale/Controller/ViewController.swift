@@ -26,20 +26,15 @@ class ViewController: UIViewController {
 //            print(snapshot.value)
 //        }
         
-        FIRDatabaseService.shared.observe(.products) { (snapshot) in
-            guard let productSnapshot = ProductsSnapshot(snapshot: snapshot) else {return}
-            print(productSnapshot)
-        }
-//        ProductsService.shared.delegate = self
-//        ProductsService.shared.observeProducts()
+        ProductsService.shared.delegate = self
+        ProductsService.shared.observeProducts()
+        
     }
     
     @IBAction func onAddTapped() {
         AlertService.addProductAlert(in: self) { (product) in
             print("product = ",product)
-            self.products.append(product)
-            self.collectionView.reloadData()
-//            ProductsService.shared.post(product: product)
+            ProductsService.shared.post(product: product)
         }
 }
     
@@ -56,6 +51,7 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print("products.count = ",products.count)
         return products.count
     }
     
