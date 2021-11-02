@@ -19,18 +19,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
       print("View Did Load Accssed!")
 // Write to the Database
-        print("ViewDidLoad tries to write to Database!")
-        FIRDatabaseService.shared.post(parameters: ["title": "Another cool shirt", "cost": "29.00"], to: .products)
+//        print("ViewDidLoad tries to write to Database!")
+//        FIRDatabaseService.shared.post(parameters: ["title": "Another cool shirt", "cost": "29.00"], to: .products)
 
 // Read from Database
 //        FIRDatabaseService.shared.observe(.products) { (snapshot) in
 //            print(snapshot.value)
 //        }
-//
-//        ProductsService.shared.delegate = self
-//        print("Before Reading from Database ")
-//        ProductsService.shared.observeProducts()
-//
+
+        ProductsService.shared.delegate = self
+        print("Before Reading from Database ")
+        ProductsService.shared.observeProducts()
+
     }
     
     @IBAction func onAddTapped() {
