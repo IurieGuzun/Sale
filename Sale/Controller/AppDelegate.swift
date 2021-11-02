@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        print("Before Authorization")
         UNService.shared.authorize()
+        print("Before FirebaseAPP Configure!")
         FirebaseApp.configure()
 
         return true

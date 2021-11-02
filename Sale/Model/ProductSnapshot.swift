@@ -20,5 +20,6 @@ struct ProductsSnapshot {
             products.append(product)
         }
         self.products = products
+        print("Products = ", products)
     }
 }

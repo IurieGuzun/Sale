@@ -20,7 +20,9 @@ class ProductsService {
     
     func observeProducts() {
         FIRDatabaseService.shared.observe(.products) { (snapshot) in
-            guard let productsSnapshot = ProductsSnapshot(snapshot: snapshot) else { return }
+            guard let productsSnapshot = ProductsSnapshot(snapshot: snapshot) else {
+                print("Something went wrong  when Reading from Database! ")
+                return }
             print("snapshot = ",snapshot)
             self.delegate?.didChange(products: productsSnapshot.products)
         }

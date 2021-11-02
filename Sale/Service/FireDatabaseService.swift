@@ -19,11 +19,15 @@ class FIRDatabaseService {
     static let shared = FIRDatabaseService()
     
     func reference(_ databaseReference: FIRDatabaseReference) -> DatabaseReference {
+        print("Database Reference  = ", Database.database().reference().child(databaseReference.rawValue))
         return Database.database().reference().child(databaseReference.rawValue)
     }
     
     func observe(_ databaseReference: FIRDatabaseReference, completion: @escaping (DataSnapshot) -> Void) {
+        print("observe function has been called ")
+
         reference(databaseReference).observe(.value) { (snapshot) in
+            print("Snapshot from observe function = ", snapshot)
             completion(snapshot)
         }
     }

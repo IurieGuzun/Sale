@@ -3,23 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>558554920946-9upgckaecdjjfahdfgrvv702bd5kr2o1.apps.googleusercontent.com</string>
+	<string>1007117888802-s9l040g6r83cnnhpnvv78o3nhju40afh.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.558554920946-9upgckaecdjjfahdfgrvv702bd5kr2o1</string>
+	<string>com.googleusercontent.apps.1007117888802-s9l040g6r83cnnhpnvv78o3nhju40afh</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBBMTU-QlQG_6ADrgjxQSco8KSI5woUr4k</string>
+	<string>AIzaSyDDmvIB86zhMWw0A0-1rGh0tDFxm22KSkc</string>
 	<key>GCM_SENDER_ID</key>
-	<string>558554920946</string>
+	<string>1007117888802</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.IurieGuzun.Sale</string>
 	<key>PROJECT_ID</key>
-	<string>sale-92beb</string>
+	<string>sale-217cb</string>
 	<key>STORAGE_BUCKET</key>
-	<string>sale-92beb.appspot.com</string>
+	<string>sale-217cb.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false/>
+	<key>DATABASE_URL</key>
+	<string>https://sale-217cb-default-rtdb.firebaseio.com/</string>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
@@ -29,8 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:558554920946:ios:7affac1f36d1ba7f3a9d6b</string>
-	<key>DATABASE_URL</key>
-	<string>https://sale-92beb-default-rtdb.firebaseio.com/</string>
+	<string>1:1007117888802:ios:89b8f3732b0ec748f5097b</string>
 </dict>
 </plist>

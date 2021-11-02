@@ -25,8 +25,11 @@ class AlertService {
             guard let title = alert.textFields?.first?.text,
                 let price = alert.textFields?.last?.text,
                 let cost = Double(price)
-                else { return }
-            
+  
+                else {
+                    print("Your Send didn't succeed!")
+                    return }
+            print("Your Send succeeded!")
             let product = Product(title: title, cost: cost)
             completion(product)
         }
