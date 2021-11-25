@@ -12,6 +12,7 @@ class ProductCell: UICollectionViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var imagePhoto: UIImageView!
     
     func configure(with product: Product) {
         titleLabel.text = product.title

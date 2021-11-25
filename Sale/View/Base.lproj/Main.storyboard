@@ -104,6 +104,7 @@ CCQyNS4wMA
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="179" height="190"/>
                                         <connections>
+                                            <outlet property="imagePhoto" destination="3qx-nT-sVy" id="ASz-x0-mRX"/>
                                             <outlet property="priceLabel" destination="RiO-eQ-f40" id="MRo-xz-m4h"/>
                                             <outlet property="titleLabel" destination="wqK-fN-wTO" id="sTJ-q7-21V"/>
                                         </connections>

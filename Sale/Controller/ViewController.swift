@@ -18,14 +18,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       print("View Did Load Accssed!")
-// Write to the Database
-//        print("ViewDidLoad tries to write to Database!")
-//        FIRDatabaseService.shared.post(parameters: ["title": "Another cool shirt", "cost": "29.00"], to: .products)
-
-// Read from Database
-//        FIRDatabaseService.shared.observe(.products) { (snapshot) in
-//            print(snapshot.value)
-//        }
 
         ProductsService.shared.delegate = self
         print("Before Reading from Database ")
@@ -61,6 +53,9 @@ extension ViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCell else { return UICollectionViewCell() }
         let product = products[indexPath.item]
         cell.configure(with: product)
+        print("indexPath = ",indexPath.item)
+        let imageName = "sale-" + String(indexPath.item % 10)
+        cell.imagePhoto.image = UIImage(named: imageName)
         return cell
     }
     
