@@ -24,6 +24,16 @@ class NotificationService: UNNotificationServiceExtension {
                 contentHandler(request.content)
                 return
             }
+            
+            DownloadImage.shared.getImage(with: imageUrlString) { url in
+                do {
+                let attachment = try UNNotificationAttachment(identifier: "image", url: url, options: nil)
+                    bestAttemptContent.attachments = [attachment]
+                    contentHandler(bestAttemptContent)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            
             contentHandler(bestAttemptContent)
         }
     }
