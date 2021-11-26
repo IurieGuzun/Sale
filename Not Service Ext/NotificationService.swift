@@ -25,7 +25,7 @@ class NotificationService: UNNotificationServiceExtension {
                 return
             }
             
-            DownloadImage.shared.getImage(with: imageUrlString) { url in
+            DownloadImage.shared.getImage(with: imageUrlString) { (url) in
                 do {
                 let attachment = try UNNotificationAttachment(identifier: "image", url: url, options: nil)
                     bestAttemptContent.attachments = [attachment]
@@ -33,7 +33,7 @@ class NotificationService: UNNotificationServiceExtension {
                 } catch {
                     print(error.localizedDescription)
                 }
-            
+            }
             contentHandler(bestAttemptContent)
         }
     }
