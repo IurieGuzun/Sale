@@ -8,6 +8,11 @@
 
 import Foundation
 
+struct Glogal {
+    static var numberOfProducts = 0
+}
+
+
 struct Product {
     let title: String
     let cost: Double

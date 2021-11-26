@@ -15,7 +15,10 @@ class ProductCell: UICollectionViewCell {
     @IBOutlet weak var imagePhoto: UIImageView!
     
     func configure(with product: Product) {
-        titleLabel.text = product.title
+        var original = product.title
+        original.removeFirst()
+        titleLabel.text = String(original)
+        print("slised = ",original)
         priceLabel.text = product.price()
     }
     }

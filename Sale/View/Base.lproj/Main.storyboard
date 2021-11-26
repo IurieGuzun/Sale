@@ -27,18 +27,16 @@
                                         <string key="title" base64-UTF8="YES">
 UHJvZHVjdHMIA
 </string>
-                                        <rightBarButtonItems>
-                                            <barButtonItem title="Item" image="plus" catalog="system" id="oGR-WM-cur">
-                                                <connections>
-                                                    <action selector="onAddTapped" destination="BYZ-38-t0r" id="gmm-ra-yvj"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem systemItem="bookmarks" id="0sR-dT-MFa">
-                                                <connections>
-                                                    <action selector="onSubscribeTapped" destination="BYZ-38-t0r" id="4Da-aK-3vy"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </rightBarButtonItems>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="compose" id="0sR-dT-MFa">
+                                            <connections>
+                                                <action selector="onSubscribeTapped" destination="BYZ-38-t0r" id="4Da-aK-3vy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="oGR-WM-cur">
+                                            <connections>
+                                                <action selector="onAddTapped" destination="BYZ-38-t0r" id="gmm-ra-yvj"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>

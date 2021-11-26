@@ -30,9 +30,17 @@ class AlertService {
                     print("Your Send didn't succeed!")
                     return }
             print("Your Send succeeded!")
-            let product = Product(title: title, cost: cost)
+            let product = Product(title: String((Glogal.numberOfProducts) % 10)+title, cost: cost)
             completion(product)
         }
+        print(Glogal.numberOfProducts, Glogal.numberOfProducts)
+
+        let imageName = UIImage(named: "sale-" + String((Glogal.numberOfProducts) % 10))
+        
+        var imageView = UIImageView(frame: CGRect(x: 200, y: 10, width: 60, height: 70))
+        imageView.image = imageName
+        alert.view.addSubview(imageView)
+        
         alert.addAction(send)
         vc.present(alert, animated: true)
     }

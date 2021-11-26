@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      print("View Did Load Accssed!")
+        print("View Did Load Accssed!")
 
         ProductsService.shared.delegate = self
         print("Before Reading from Database ")
@@ -46,16 +46,22 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print("products.count = ",products.count)
+        Glogal.numberOfProducts = products.count     // Added by Iurie
         return products.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCell else { return UICollectionViewCell() }
         let product = products[indexPath.item]
+        print(product.title)
         cell.configure(with: product)
         print("indexPath = ",indexPath.item)
-        let imageName = "sale-" + String(indexPath.item % 10)
+        
+        if let firstChar = product.title.first {
+        let imageName = "sale-" + String(firstChar)
         cell.imagePhoto.image = UIImage(named: imageName)
+        }
+        
         return cell
     }
     
